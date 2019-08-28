@@ -1,3 +1,3 @@
-for i in 0...10{
-    print(i)
+for x in 0...10{
+    print(x)
 }
