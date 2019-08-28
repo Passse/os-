@@ -1,3 +1,8 @@
-for x in 0...10{
-    print(x)
+var a = 0
+var b = 10
+for a in a...b{
+    print(a)
 }
+#include<stdio.h>
+int main()
+{
