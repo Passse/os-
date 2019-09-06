@@ -1,4 +1,4 @@
-var name = "菜鸟驿站"
+/*var name = "菜鸟驿站"
 var site = "aaaaaa"
 print("\(name)的地址为\(site)")
 
@@ -64,3 +64,29 @@ else
 {
     print("用户名不存在")
 }
+
+print("请输入成绩:")
+var score = readLine()!
+var s = Int(score)!
+switch s/10 {
+case 10,9:
+    print("A");
+case 8:
+    print("B");
+case 7:
+    print("C");
+case 6:
+    print("D");
+default:
+    print("不及格");
+}
+
+var yu = true ? 10 : 20
+print(yu);*/
+
+var a = 1,sum = 0;
+while a < 100 {
+    sum = sum + a;
+    a = a + 1;
+}
+print(a);
