@@ -17,11 +17,39 @@ while i <= 100
     i = i + 1
 }
 print(s)*/
-var i = readLine()!
-while i != "p"
+/*var i = readLine()!
+while i != "q"
 {
-    var j = Int(i)!
-    var result = j * 2
+    let j = Int(i)!
+    let result = j * 2
     print(result)
     i = readLine()!
+}*/
+
+/*var numStr = ""
+var num = 0
+while numStr != "q"
+{
+    numStr = readLine()!
+    if numStr != "q"
+    {
+        num = Int(numStr)!
+        print("num = \(num * 2)")
+    }
+}*/
+
+/*var i = readLine()!
+var k = 0
+while i != "end"
+{
+    let j = Int(i)!
+    if j > k {
+        k = j
+    }
+    i = readLine()!
+}
+print(k)*/
+for i in 1...10
+{
+    print(i)
 }
