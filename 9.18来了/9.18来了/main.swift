@@ -59,13 +59,48 @@ for i in a
 }
 print(s)*/
 
-var array:[Int] = [2,4,5,10,46,13,6,7,9]
-var max = array[0]
-for i in array
+//var array:[Int] = [2,4,5,10,46,13,6,7,9]
+//var max = array[0]
+//for i in array
+//{
+//    if i > max
+//    {
+//        max = i
+//    }
+//}
+//print(max)
+
+//var a:[Int] = [2,3,4,6]
+
+//var a = [Int]()
+//a.append(10)
+//a.append(20)
+//a += [30]
+//for i in a
+//{
+//    print(i)
+//}
+
+//var a = "aaa"
+//a.append("10")
+//a.append("20piopo")
+//print(a)
+
+//var a = [10,20,34]
+//
+//for (c,d) in a.enumerated()
+//{
+//    print(c)
+//    print(d)
+//}
+
+var str = ["3","a","8","haha","1","2"]
+var l = str.count-1
+var ss:[String] = [String]()
+for (c,d) in str.enumerated()
 {
-    if i > max
-    {
-        max = i
-    }
+    ss.append(str[c])
+    str[c]=str[l]
+    l = l - 1
 }
-print(max)
+print(ss)
