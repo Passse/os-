@@ -134,16 +134,42 @@ print(s)*/
 //    print(i)
 //}
 
-var a:[Int] = [3,5,8,7,6,9]
-var b = a[0]
-for(index , _) in a.enumerated()
+//var a:[Int] = [3,5,8,7,6,9]
+//var b = a[0]
+//for(index , _) in a.enumerated()
+//{
+//    if index < a.count - 1{
+//    a[index] = a[index + 1]
+//    }
+//}
+//a[a.count - 1] = b
+//for i in a
+//{
+//    print(i)
+//}
+
+//func sum(i1:Int , i2:Int) -> Int
+//{
+//    return i1 + i2
+//}
+//print(sum(i1:2 , i2:4))
+
+
+func sum(a:[Int]) -> Int
 {
-    if index < a.count - 1{
-    a[index] = a[index + 1]
+    var s = 0
+    for j in a
+    {
+        s = s + j
     }
+    return s
 }
-a[a.count - 1] = b
+var a:[Int] = [Int]()
 for i in a
 {
-    print(i)
+    i = readLine()!
+    a.append(i)
+    if(String(i) == "end"){
+        print(sum(a:[]))
+    }
 }
