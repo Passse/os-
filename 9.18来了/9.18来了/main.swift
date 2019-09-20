@@ -94,13 +94,56 @@ print(s)*/
 //    print(d)
 //}
 
-var str = ["3","a","8","haha","1","2"]
-var l = str.count-1
-var ss:[String] = [String]()
-for (c,d) in str.enumerated()
+//var str = ["3","a","8","haha","1","2"]
+//var l = str.count-1
+//var ss:[String] = [String]()
+//for (c,d) in str.enumerated()
+//{
+//    ss.append(str[c])
+//    str[c]=str[l]
+//    l = l - 1
+//}
+//print(ss)
+//for(index , _) in str.enumerated()
+//{
+//    if index < str.count / 2{
+//        var temp = ""
+//        temp = str[index]
+//        str[index] = str[str.count - index - 1]
+//        str[str.count - index - 1] = temp
+//    }
+//}
+
+//for item in str{
+//    print(item)
+//}
+
+//var a = [3,5,7,8]
+//var b = a.count
+//for(index , _) in a.enumerated()
+//{
+//    let c = a[0]
+//    if index < b {
+//    a[index] = a[index + 1]
+//    a[b] = c
+//    }
+//}
+//
+//for i in a
+//{
+//    print(i)
+//}
+
+var a:[Int] = [3,5,8,7,6,9]
+var b = a[0]
+for(index , _) in a.enumerated()
 {
-    ss.append(str[c])
-    str[c]=str[l]
-    l = l - 1
+    if index < a.count - 1{
+    a[index] = a[index + 1]
+    }
 }
-print(ss)
+a[a.count - 1] = b
+for i in a
+{
+    print(i)
+}
