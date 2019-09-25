@@ -153,8 +153,19 @@ print(s)*/
 //    return i1 + i2
 //}
 //print(sum(i1:2 , i2:4))
-
-
+var a:[Int] = [Int]()
+while true
+{
+    let input = readLine()!
+    var num = 0;
+    if(input != "end"){
+        num = Int(input)!
+        a.append(num)
+    }
+    else{
+        break;
+    }
+}
 func sum(a:[Int]) -> Int
 {
     var s = 0
@@ -164,12 +175,4 @@ func sum(a:[Int]) -> Int
     }
     return s
 }
-var a:[Int] = [Int]()
-for i in a
-{
-    i = readLine()!
-    a.append(i)
-    if(String(i) == "end"){
-        print(sum(a:[]))
-    }
-}
+print(sum(a:a))
